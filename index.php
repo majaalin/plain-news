@@ -18,7 +18,7 @@ require __DIR__ . '/functions.php';
 
 <?php foreach ($articles as $article) : ?>
     <h2><?php echo $article['title']; ?></h2>
-    <img src="<?php echo $article['image']; ?>" alt="<?php echo $article['title']; ?>">
+    <img src="<?php echo $article['image']; ?>"  loading="lazy"; alt="<?php echo $article['title']; ?>">
     <p><?php echo $article['content']; ?></p>
     <ul>
         <li><?php echo $article['published_date']; ?></li>
