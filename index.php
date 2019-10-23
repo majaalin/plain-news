@@ -1,5 +1,8 @@
 <?php 
 
+require __DIR__ . '/data.php';
+require __DIR__ . '/functions.php';
+
 ?>
 
 
@@ -12,6 +15,17 @@
     <title>Document</title>
 </head>
 <body>
+
+<?php foreach ($articles as $article) : ?>
+    <h2><?php echo $article['title']; ?></h2>
+    <p><?php echo $article['content']; ?></p>
+    <ul>
+        <li><?php echo $article['published_date']; ?></li>
+        <li><?php echo $article['author']; ?></li>
+        <li><?php echo $article['like_counter']; ?></li>
+    </ul>
+<?php endforeach ?>
+
     
 </body>
 </html>
