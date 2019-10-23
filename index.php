@@ -3,6 +3,8 @@
 require __DIR__ . '/data.php';
 require __DIR__ . '/functions.php';
 
+/** Sort articles by date */
+
 usort($articles, 'sortArticlesByDate');
 
 ?>
@@ -14,7 +16,8 @@ usort($articles, 'sortArticlesByDate');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:400,600&display=swap" rel="stylesheet">    <title>Document</title>
 </head>
 <body>
 
