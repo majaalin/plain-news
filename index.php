@@ -20,17 +20,18 @@ usort($articles, 'sortArticlesByDate');
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:400,600&display=swap" rel="stylesheet">    <title>Document</title>
 </head>
 <body>
-
+<main>
 <?php foreach ($articles as $article) : ?>
     <h2><?php echo $article['title']; ?></h2>
     <img src="<?php echo $article['image']; ?>"  loading="lazy"; alt="<?php echo $article['title']; ?>">
     <p><?php echo $article['content']; ?></p>
     <ul>
-        <li><?php echo $article['published_date']; ?></li>
-        <li><?php echo $article['author']; ?></li>
-        <li><?php echo $article['like_counter']; ?></li>
+        <li class="published-date"><?php echo $article['published_date']; ?></li>
+        <li class="author_name"><?php echo getAuthorsName($article['author_id'], $authors);?></li>
+        <li class="likes"><?php echo $article['like_counter']; ?></li>
     </ul>
 <?php endforeach ?>
+</main>
 
     
 </body>

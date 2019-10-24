@@ -22,3 +22,11 @@ function sortArticlesByDate(array $a, array $b) : int
 
 
 
+function getAuthorsName($articleAuthorsId, $authors) {
+foreach ($authors as $author) {
+    if ($author['id'] === $articleAuthorsId) {
+        $name = $author['full_name'];
+    }
+}
+return $name;
+}
