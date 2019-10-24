@@ -22,6 +22,7 @@ usort($articles, 'sortArticlesByDate');
 <body>
 <main>
 <?php foreach ($articles as $article) : ?>
+<article>
     <h2><?php echo $article['title']; ?></h2>
     <img src="<?php echo $article['image']; ?>"  loading="lazy"; alt="<?php echo $article['title']; ?>">
     <p><?php echo $article['content']; ?></p>
@@ -30,6 +31,7 @@ usort($articles, 'sortArticlesByDate');
         <li class="author_name"><?php echo getAuthorsName($article['author_id'], $authors);?></li>
         <li class="likes"><?php echo $article['like_counter']; ?></li>
     </ul>
+</article>
 <?php endforeach ?>
 </main>
 
