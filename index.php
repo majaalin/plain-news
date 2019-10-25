@@ -28,13 +28,14 @@ usort($articles, 'sortArticlesByDate');
     <p><?php echo $article['content']; ?></p>
     <ul>
         <li class="published-date"><?php echo $article['published_date']; ?></li>
-        <li class="author_name"><?php echo getAuthorsName($article['author_id'], $authors);?></li>
-        <li class="likes"><?php echo $article['like_counter']; ?></li>
+        <li class="author-name"><?php echo getAuthorsName($article['author_id'], $authors);?></li>
+        <li class="like">
+            <div class="number"><?php echo $article['like_counter']; ?></div>
+        </li>
     </ul>
 </article>
 <?php endforeach ?>
 </main>
-
     
 </body>
 </html>

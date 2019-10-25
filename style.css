@@ -4,14 +4,21 @@
 }
 
 body {
-    background-color: ghostwhite;
+    background-color: #DAE2DD;
+}
+
+article {
+    background-color:#FFFFFF;
+    margin: 10px;
+    border-radius: 20px;
 }
 
 h2 {
+    color: #041404;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-    font-size: 28px;
-    margin: 20px;
+    font-size: 2rem;
+    padding: 10px 20px;
 }
 
 img {
@@ -22,18 +29,37 @@ img {
 p {
     font-family: 'Open Sans', sans-serif;
     margin: 5px 20px;
+    font-size: 1rem;
 }
 
 ul {
     list-style: none;
     display: flex;
     justify-content: flex-start;
-    padding: 0;
-    margin: 10px 0 10px 20px;
+    padding: 0 0 10px 0;
+    margin: 12px 0 0px 20px;
 }
 
 li {
     margin: 0 20px 0 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.9rem;
+}
+
+.like {
+    display: flex;
+    width: 20px;
+    background-image: url(heart.png);
+    background-position:center;
+	background-repeat:no-repeat;
+    background-size:cover;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.number{
+    font-size: 0.75rem;
+    color: white;
 }
 
 @media only screen and (min-width: 600px) {
@@ -42,4 +68,3 @@ li {
         grid-template-columns: 1fr 1fr;
     }
 }
-
