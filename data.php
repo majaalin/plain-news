@@ -78,7 +78,7 @@ $articles = [
     [
         'title' => 'Orci ac auctor',
         'image' => 'img6.jpg',
-        'content' => 'Vulputate sapien nec sagittis aliquam malesuada bibendum. Metus aliquam eleifend mi in nulla. Dolor purus non enim praesent elementum facilisis leo. Augue lacus viverra vitae congue eu consequat. Dui ut ornare lectus sit amet est. Vulputate dignissim suspendisse in est. Magna etiam tempor orci eu lobortis elementum nibh tellus.',
+        'content' => 'Vulputate sapien nec sagittis aliquam malesuada bibendum. Metus aliquam eleifend mi in nulla. Dolor purus non enim praesent elementum facilisis leo. Augue lacus viverra vitae congue eu consequat. Dui ut ornare lectus sit amet est. Vulputate dignissim suspendisse in est. Magna etiam tempor orci eu lobortis elementum nibh tellus. Rhoncus urna neque viverra justo nec ultrices dui sapien.',
         'author_id' => 03,
         'published_date' => '2019-04-13',
         'like_counter' => 0

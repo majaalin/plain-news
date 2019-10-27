@@ -9,25 +9,30 @@ require __DIR__ . '/data.php';
  *
  * @param array $a
  * @param array $b
- * @return integer
+ * 
+ *@return integer
  */
+
 function sortArticlesByDate(array $a, array $b) : int
 {
     return strtotime($b['published_date']) - strtotime($a['published_date']);
 }
 
+
 /**
  * Get name of author from authors array to article
  *
- * @param [type] $articleAuthorsId
- * @param [type] $authors
- * @return void
+ * @param integer $articleAuthorsId
+ * @param array $authors
+ * 
+ * @return string
  */
+
 function getAuthorsName($articleAuthorsId, $authors) {
-foreach ($authors as $author) {
-    if ($author['id'] === $articleAuthorsId) {
-        $name = $author['full_name'];
+    foreach ($authors as $author) {
+        if ($author['id'] === $articleAuthorsId) {
+            $name = $author['full_name'];
+        }
     }
-}
 return $name;
 }

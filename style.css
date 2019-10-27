@@ -1,70 +1,141 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    color: #323131;
+    font-size: 14px;
 }
 
 body {
     background-color: #DAE2DD;
 }
 
+header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    margin: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 4px 11px 0px rgba(209,209,209,0.96);
+}
+
+header img {
+    width: 45px;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.search {
+    display: flex;
+}
+
+input {
+    border-radius: 20px 0 0 20px;
+    padding: 5px 30px;
+    border: solid 1.5px #999997;
+    outline:none; 
+}
+
+.search button {
+    border-radius: 0 20px 20px 0;
+    padding: 5px 20px;
+    border: solid 1.5px #999997;
+    background-color: #999997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline:none; 
+}
+
+.search button img {
+    width: 20px;
+    height: 20px;
+}
+
+input::placeholder {
+    color: #999997;
+}
+
 article {
     background-color:#FFFFFF;
-    margin: 10px;
-    border-radius: 20px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-column: 90% 10%;
+    box-shadow: 5px 4px 11px 0px rgba(209,209,209,0.96);
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3rem;
 }
 
 h2 {
-    color: #041404;
+    color: #323131;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 2rem;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 img {
     width: 100%;
 }
 
-
 p {
     font-family: 'Open Sans', sans-serif;
-    margin: 5px 20px;
+    margin: 10px 10px;
     font-size: 1rem;
 }
 
-ul {
+main ul {
     list-style: none;
     display: flex;
-    justify-content: flex-start;
-    padding: 0 0 10px 0;
-    margin: 12px 0 0px 20px;
+    padding: 0px 10px 15px;
+    align-items: center;
 }
 
-li {
+main li {
     margin: 0 20px 0 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.9rem;
+    color: #FFFFFF;
+    padding: 5px;
 }
 
 .like {
     display: flex;
-    width: 20px;
+    width: 26px;
     background-image: url(heart.png);
-    background-position:center;
-	background-repeat:no-repeat;
-    background-size:cover;
+    background-size: cover;
     justify-content: center;
-    align-items: flex-start;
+}
+
+.published-date {
+    background-color:#323131;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+}
+
+.author-name {
+    background-color: #323131;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
 }
 
 .number{
     font-size: 0.75rem;
-    color: white;
+    color: #DAE2DD;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 640px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
     }
+
 }

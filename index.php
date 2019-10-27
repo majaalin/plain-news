@@ -3,12 +3,11 @@
 require __DIR__ . '/data.php';
 require __DIR__ . '/functions.php';
 
-/** Sort articles by date */
+// Sort articles by date
 
 usort($articles, 'sortArticlesByDate');
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,22 +19,29 @@ usort($articles, 'sortArticlesByDate');
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:400,600&display=swap" rel="stylesheet">    <title>Document</title>
 </head>
 <body>
-<main>
-<?php foreach ($articles as $article) : ?>
-<article>
-    <h2><?php echo $article['title']; ?></h2>
-    <img src="<?php echo $article['image']; ?>"  loading="lazy"; alt="<?php echo $article['title']; ?>">
-    <p><?php echo $article['content']; ?></p>
-    <ul>
-        <li class="published-date"><?php echo $article['published_date']; ?></li>
-        <li class="author-name"><?php echo getAuthorsName($article['author_id'], $authors);?></li>
-        <li class="like">
-            <div class="number"><?php echo $article['like_counter']; ?></div>
-        </li>
-    </ul>
-</article>
-<?php endforeach ?>
-</main>
-    
+    <header>
+        <img class="logo" src="logo.png" alt="logo">
+        <div class='search'>
+        <input type="text" placeholder="Search..">
+        <button><img src="search.png" alt="search"></button>
+        </div>
+        <img src="hamburger.png" alt="menu">
+    </header>
+    <main>
+        <?php foreach ($articles as $article) : ?>
+            <article>
+                <h2><?php echo $article['title']; ?></h2>
+                <img src="<?php echo $article['image']; ?>"  loading="lazy"; alt="<?php echo $article['title']; ?>">
+                <p><?php echo $article['content']; ?></p>
+                <ul>
+                    <li class="author-name"><?php echo getAuthorsName($article['author_id'], $authors);?></li>
+                    <li class="published-date"><?php echo $article['published_date']; ?></li>
+                    <li class="like">
+                        <div class="number"><?php echo $article['like_counter']; ?></div>
+                    </li>
+                </ul>
+            </article>
+        <?php endforeach ?>
+    </main>
 </body>
 </html>
