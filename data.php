@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+
 $authors = [
 
     [
@@ -61,7 +62,7 @@ $articles = [
     ],
     [
         'title' => 'Cursus sit amet',
-        'image' => 'img4.jpg',
+        'image' => 'img5.jpg',
         'content' => 'A diam maecenas sed enim ut sem. Ipsum consequat nisl vel pretium lectus quam id leo in. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Sapien faucibus et molestie ac feugiat. Dolor sit amet consectetur adipiscing elit pellentesque. Sagittis aliquam malesuada bibendum arcu vitae elementum.',
         'author_id' => 02,
         'published_date' => '2019-08-10',
@@ -69,7 +70,7 @@ $articles = [
     ],
     [
         'title' => 'Egestas pretium',
-        'image' => 'img5.jpg',
+        'image' => 'img4.jpg',
         'content' => 'Nulla aliquet enim tortor at auctor urna nunc. Magna sit amet purus gravida quis blandit turpis. Ut tortor pretium viverra suspendisse potenti nullam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat.',
         'author_id' => 03,
         'published_date' => '2019-10-12',

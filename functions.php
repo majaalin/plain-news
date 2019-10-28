@@ -2,7 +2,9 @@
 
 declare(strict_types=1); 
 
+
 require __DIR__ . '/data.php';
+
 
 /**
  * Sort articles by date
@@ -10,11 +12,10 @@ require __DIR__ . '/data.php';
  * @param array $a
  * @param array $b
  * 
- *@return integer
+ * @return int
  */
 
-function sortArticlesByDate(array $a, array $b) : int
-{
+function sortArticlesByDate(array $a, array $b) : int {
     return strtotime($b['published_date']) - strtotime($a['published_date']);
 }
 
@@ -22,13 +23,13 @@ function sortArticlesByDate(array $a, array $b) : int
 /**
  * Get name of author from authors array to article
  *
- * @param integer $articleAuthorsId
+ * @param int $articleAuthorsId
  * @param array $authors
  * 
  * @return string
  */
 
-function getAuthorsName($articleAuthorsId, $authors) {
+function getAuthorsName( int $articleAuthorsId, array $authors) : string { 
     foreach ($authors as $author) {
         if ($author['id'] === $articleAuthorsId) {
             $name = $author['full_name'];
