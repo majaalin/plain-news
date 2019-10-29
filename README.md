@@ -1,1 +1,3 @@
-# plain-news
+# Plain News
+
+## Assignments
