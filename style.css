@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    color: #323131;
     font-size: 14px;
+    color: #323131;
+    font-family: 'Open Sans', sans-serif;
 }
 
-body {
-    background-color: white;
-}
+
+/* HEADER */
 
 header {
     display: flex;
@@ -17,62 +17,62 @@ header {
     margin: 5px 10px;
 }
 
-header ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
-}
-
-header li {
-    display: inline;
-    border: 1px solid lightgrey;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 5px 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-header li:hover {
-    background-color: black;
-    border: 1px solid black;
-    color: white;
-}
-
 header img {
     width: 65px;
     margin: 10px 0 0 0;
     padding: 0;
 }
 
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 1px solid #D3D3D3;
+    border-radius: 20px;
+}
+
+header li:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ARTICLE */
+
 article {
-    background-color:#FFFFFF;
-    margin: 10px 10px;
     display: flex;
     justify-content: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    border: 1px solid lightgrey;
+    margin: 10px 10px;
+    border: 1px solid #D3D3D3;
     border-radius: 2.5px;
 }
 
 h2 {
-    color: #323131;
     font-family: 'Karla', sans-serif;
     font-weight: 700;
     font-size: 1.8rem;
-    padding: 10px 20px;
-    margin: 5px;
     text-align: left;
+    margin: 5px;
+    padding: 10px 20px;
 }
 
-img {
+article img {
     width: 100%;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
     margin: 10px 20px;
     font-size: 0.95rem;
 }
@@ -86,26 +86,30 @@ main ul {
 }
 
 main li {
-    font-family: 'Open Sans', sans-serif;
     font-size: 0.85rem;
 }
 
 .like {
-    border: 1px solid lightgrey;
+    font-size: 0.85rem;
+    border: 1px solid #D3D3D3;
     border-radius: 20px;
-    padding: 3px 6px;
+    padding: 3px 8px;
     margin: 0 0 10px 0;
 }
 
 .like:hover {
-    background-color: black;
-    border: 1px solid black;
-    color: white;
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
     cursor: pointer;
 
 }
 
+
+/* MEDIA QUERIES */
+
 @media only screen and (min-width: 690px) {
+    
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -113,10 +117,10 @@ main li {
 }
 
 @media only screen and (min-width: 1110px) {
+    
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-
     }
 
 }

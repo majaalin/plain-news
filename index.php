@@ -1,5 +1,6 @@
 <?php 
 
+
 require __DIR__ . '/data.php';
 require __DIR__ . '/functions.php';
 
@@ -10,6 +11,7 @@ usort($articles, 'sortArticlesByDate');
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +20,11 @@ usort($articles, 'sortArticlesByDate');
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat|Open+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Plain News</title>
 </head>
 <body>
     <header>
-        <img src="image/logo.png" alt="">
+        <img src="image/logo.png" loading="lazy" alt="logo">
         <ul>
             <li>Home</li>
             <li>Article</li>
@@ -33,17 +35,15 @@ usort($articles, 'sortArticlesByDate');
     <main>
         <?php foreach ($articles as $article) : ?>
             <article>
-                <div class="content">
                 <h2><?php echo $article['title']; ?></h2>
-                <img src="image/<?php echo $article['image']; ?>"  loading="lazy"; alt="<?php echo $article['title']; ?>">
+                <img src="image/<?php echo $article['image']; ?>" loading="lazy" alt="<?php echo $article['title']; ?>">
                 <ul>
-                    <li class="author-name">By: <?php echo getAuthorsName($article['author_id'], $authors);?></li>
-                    <li class="published-date"><?php echo $article['published_date']; ?></li>
+                    <li>By: <?php echo getAuthorsName($article['author_id'], $authors);?></li>
+                    <li><?php echo $article['published_date']; ?></li>
                 </ul>
                 <p><?php echo $article['content']; ?></p>
-                </div>
                 <ul>
-                    <li class="like">&#x2764;  <?php echo $article['like_counter']; ?></li>
+                    <li class="like">&#x2764; <?php echo $article['like_counter']; ?></li>
                 </ul>
             </article>
         <?php endforeach ?>
