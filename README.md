@@ -29,7 +29,7 @@ The project should use the following PHP functionality:
 - Output (echo, print etc.)
 
 ## Installation
-1. Clone down the project to you computer:
+1. Clone down the project to your computer:
 
     ```
     $ git clone https://github.com/majaalin/plain-news.git
