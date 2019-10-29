@@ -11,36 +11,50 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    margin: 8px;
-    padding: 30px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
 }
 
-header h1 {
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1rem;
-    font-weight: bold;
-    font-size: 4rem;
+header ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
 }
 
-header div {
-    font-family: 'Karla', sans-serif;
-    font-size: 4rem;
+header li {
+    display: inline;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header li:hover {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
 }
 
 header img {
-    width: 50px;
+    width: 65px;
+    margin: 10px 0 0 0;
+    padding: 0;
 }
 
 article {
     background-color:#FFFFFF;
-    margin: 15px 15px;
-    border-radius: 25px;
+    margin: 10px 10px;
     display: flex;
     justify-content: flex-start;
     justify-content: space-between;
     flex-direction: column;
     border: 1px solid lightgrey;
+    border-radius: 2.5px;
 }
 
 h2 {
@@ -96,20 +110,13 @@ main li {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
-    header ul {
-        visibility: visible;
-    }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1110px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
 
     }
 
-    header ul {
-        visibility: visible;
-    }
 }

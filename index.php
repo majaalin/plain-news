@@ -22,8 +22,13 @@ usort($articles, 'sortArticlesByDate');
 </head>
 <body>
     <header>
-        <h1>Conseqel</h1>
-        <img src="hamburger.png" alt="">
+        <img src="logo.png" alt="">
+        <ul>
+            <li>Home</li>
+            <li>Article</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
     </header>
     <main>
         <?php foreach ($articles as $article) : ?>
