@@ -29,14 +29,17 @@ The project should use the following PHP functionality:
 - Output (echo, print etc.)
 
 ## Installation
-- Clone down the project to you computer:
+1. Clone down the project to you computer:
 
     ```
     $ git clone https://github.com/majaalin/plain-news.git
      ```
-- Start your server
-- Open the index.php file in your browser
+2. Start your server
+3. Open the index.php file in your browser
 
 ## Testers
 - One
 - Two
+
+## License
+The MIT License
