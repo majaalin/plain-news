@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    <img src="logo.png" alt="Plain News" width="100">
+    <img src="image/logo.png" alt="Plain News" width="100">
     <br>
         Plain News
     <br>
