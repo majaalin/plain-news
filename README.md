@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    <img src="logo.png" alt="Plain News" width="200">
+    <img src="logo.png" alt="Plain News" width="100">
     <br>
         Plain News
     <br>
@@ -30,6 +30,7 @@ The project should use the following PHP functionality:
 
 ## Installation
 - Clone down the project to you computer:
+
     ```
     $ git clone https://github.com/majaalin/plain-news.git
      ```
