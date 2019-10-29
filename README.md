@@ -38,7 +38,7 @@ The project should use the following PHP functionality:
 3. Open the index.php file in your browser
 
 ## Testers
-- One
+- Terese Thulin
 - Two
 
 ## License
