@@ -5,7 +5,7 @@ require __DIR__ . '/data.php';
 require __DIR__ . '/functions.php';
 
 
-// Sort articles by date
+/* Sort articles by date */
 
 usort($articles, 'sortArticlesByDate');
 

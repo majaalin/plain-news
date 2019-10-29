@@ -34,7 +34,7 @@ The project should use the following PHP functionality:
     ```
     $ git clone https://github.com/majaalin/plain-news.git
      ```
-2. Start your server
+2. Start a local server
 3. Open the index.php file in your browser
 
 ## Testers

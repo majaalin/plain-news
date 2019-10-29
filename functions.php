@@ -24,13 +24,13 @@ function sortArticlesByDate(array $a, array $b) : int {
 /**
  * Get name of author from the authors array to use in the article array
  *
- * @param int $articleAuthorsId
+ * @param int $articleAuthorId
  * @param array $authors
  * 
  * @return string
  */
 
-function getAuthorsName( int $articleAuthorId, array $authors) : string { 
+function getAuthorsName(int $articleAuthorId, array $authors) : string { 
     foreach ($authors as $author) {
         if ($author['id'] === $articleAuthorId) {
             $name = $author['full_name'];
