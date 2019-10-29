@@ -16,13 +16,13 @@ usort($articles, 'sortArticlesByDate');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat|Open+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="">
+        <img src="image/logo.png" alt="">
         <ul>
             <li>Home</li>
             <li>Article</li>
@@ -35,7 +35,7 @@ usort($articles, 'sortArticlesByDate');
             <article>
                 <div class="content">
                 <h2><?php echo $article['title']; ?></h2>
-                <img src="<?php echo $article['image']; ?>"  loading="lazy"; alt="<?php echo $article['title']; ?>">
+                <img src="image/<?php echo $article['image']; ?>"  loading="lazy"; alt="<?php echo $article['title']; ?>">
                 <ul>
                     <li class="author-name">By: <?php echo getAuthorsName($article['author_id'], $authors);?></li>
                     <li class="published-date"><?php echo $article['published_date']; ?></li>
