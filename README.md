@@ -40,7 +40,7 @@ PHP 7.3.11 installed
      ```
 2. Start a local server in the resources folder in the command line
 
-  ```
+   ```
     $ php -S localhost:1337
    ```
 3. Open the index.php file in your browser
