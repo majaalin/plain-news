@@ -33,7 +33,7 @@ The project should use the following PHP functionality:
 PHP 7.3.11 installed
 
 ## Installation
-1. Clone down the project to your computer:
+1. Clone down the project to your computer
 
     ```
     $ git clone https://github.com/majaalin/plain-news.git
